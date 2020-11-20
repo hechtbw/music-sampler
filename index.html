@@ -7,52 +7,68 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
-<body>
-	<div class="container">
+<body class="bg-dark border border-dark py-4 px-2">
+	<div class="container bg-light p-5">
 		<div class="row">
-			<header class="col-12">
-				<figure class="figure">
-					<h1> Machine Gun Kelly: The Punk Rock Rapper</h1>
-					<img src="images/mgk.jpg" class="figure-img img-fluid" alt="Machine Gun Kelly on stage">
+			<header class="mx-auto py-2">
+				<h1>Machine Gun Kelly: The Punk Rock Rapper</h1>
+			</header>
+				<figure class="figure align-items-center">
+
+					<img src="images/mgk3.jpg" class="figure-img img-fluid" alt="Machine Gun Kelly on stage">
 					<figcaption class="fig-caption">
 						Photo by <a href="https://www.flickr.com/photos/alextinder/7696252038">Alex Tinder on Flickr.com</a>.
 					</figcaption>
+
+					<p class="col-md-8 lead py-2">Richard Colson Baker, known as Machine Gun Kelly (MGK) is a multi-talented rapper, musician, songwriter, and actor from Cleveland, Ohio. His began his early years as a rapper originally signing with Bad Boys and Interscope records. Despite being in the Hip-Hop genre he always mixed in a punk rock flair. On September 25th, 2020 he released his newest album Tickets to My Downfall, which is being hailed as bringing back the punk rock genre that blew up in the 1990's and early 2000's.</p>
 				</figure>
-				<p class="lead"> Richard Colson Baker, known as Machine Gun Kelly (MGK) is a multi-talented rapper, musician, songwriter, and actor from Cleveland, Ohio. His began his early years as a rapper originally signing with Bad Boys and Interscope records. Despite being in the Hip-Hop genre he always mixed in a punk rock flair. On September 25th, 2020 he released his newest album Tickets to My Downfall, which is being hailed as bringing back the punk rock genre that blew up in the 1990's and early 2000's.</p>
-			</header>
 
 
 
-				<div class="row-cols-5">
-					<img src="images/lu_album.jpg" class="img-thumbnail col" alt="Album cover: Lace Up">
-					<img src="images/binge_album.jpg" class="img-thumbnail col" alt="Album cover: Binge">
-					<img src="images/hd_album.jpg" class="img-thumbnail col" alt="Album cover: Hotel Diable">
-					<img src="images/ttmd_album.jpg" class="img-thumbnail col" alt="Album cover: Tickets to My Downfall">
+				<div class="row">
+					<img src="images/lu_album.jpg" id="lace" class="col-lg-3 col-6 img-thumbnail album" alt="Album cover: Lace Up">
+					<img src="images/binge_album.jpg" id="binge" class="col-lg-3 col-6 img-thumbnail album" alt="Album cover: Binge">
+					<img src="images/hd_album.jpg" id="hotel" class="col-lg-3 col-6 img-thumbnail album" alt="Album cover: Hotel Diable">
+					<img src="images/ttmd_album.jpg" id="tickets" class="col-lg-3 col-6 img-thumbnail album" alt="Album cover: Tickets to My Downfall">
 				</div>
-
-					<audio id="wildboy" controls preload="auto">
+			<div class="row py-3">
+				<div id="wildboy" class="song">
+					<audio controls preload="auto">
 						<source src="audio/wild_boy.mp3" type="audio/mp3">
 						<source src="audio/wild_boy.ogg" type="audio/ogg">
 					</audio>
-					<audio id="loco" controls preload="auto">
+					<p class="font-weight-bold">Machine Gun Kelly - Wild Boy (feat. Waka Flocka Flame)</p>
+				</div>
+				<div id="loco" class="song">
+					<audio controls preload="auto">
 						<source src="audio/loco.mp3" type="audio/mp3">
 						<source src="audio/loco.ogg" type="audio/ogg">
 					</audio>
-					<audio id="sixsixsix" controls preload="auto">
+					<p class="font-weight-bold">Machine Gun Kelly - LOCO</p>
+				</div>
+				<div id="sixsixsix" class="song">
+					<audio controls preload="auto">
 						<source src="audio/53666.mp3" type="audio/mp3">
 						<source src="audio/53666.ogg" type="audio/ogg">
 					</audio>
-					<audio id="forget" controls preload="auto">
+					<p class="font-weight-bold">Machine Gun Kelly - 5:3666 (feat. phem)</p>
+				</div>
+				<div id="forget" class="song">
+					<audio controls preload="auto">
 						<source src="audio/forget_me_too.mp3" type="audio/mp3">
 						<source src="audio/forget_me_too.ogg" type="audio/ogg">
 					</audio>
-
-				<footer>
-					<p>This is a tribute to the music of Machine Gun Kelly, created by Benjamin Hecht. This is only a small sample of MGK's music, a complete list of all of his music can be found on his website: <a href="https://www.machinegunkelly.com/">machinegunkelly.com</a></p>
-
+					<p class="font-weight-bold">Machine Gun Kelly - forget me too (feat. Halsey)</p>
+				</div>
+			</div>
+			<div class="row">
+				<footer class="col-md-8 py-3">
+					<p>This is a sampling of songs from Machine Gun Kelly, created by Benjamin Hecht. This is only a small sample of MGK's music, a complete list of all of his music can be found on his website: <a href="https://www.machinegunkelly.com/">machinegunkelly.com</a> View <a href="https://github.com/hechtbw/music-sampler">my Github repo.</a></p>
 				</footer>
-
+			</div>
 		</div>
 	</div>
+
+	<script src="js/scripts.js"></script>
 </body>
 </html>
